@@ -1,7 +1,5 @@
 {
 	"KSR030_Spider|block": "KSR030_Spider",
-	"KSR030_Spider.SpiderServoNum.Head|block": "頭部",
-	"KSR030_Spider.SpiderServoNum.Tail|block": "尾巴",
 	"KSR030_Spider.SpiderServoNum.L_Lower_Thigh|block": "後左小腿",
 	"KSR030_Spider.SpiderServoNum.R_Lower_Thigh|block": "後右小腿",
 	"KSR030_Spider.SpiderServoNum.R_Forearm|block": "前右小腿",
