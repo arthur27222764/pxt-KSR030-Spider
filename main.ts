@@ -194,7 +194,7 @@ namespace KSR030_Spider {
                 SpiderServo(KSR030_Spider.SpiderServoNum.R_Forearm, 130)
                 SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 90)
                 basic.pause(speed)
-                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 110)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Forearm, 110)
                 basic.pause(speed)
 
                 break;
