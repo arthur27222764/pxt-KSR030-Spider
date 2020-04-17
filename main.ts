@@ -37,14 +37,16 @@ namespace KSR030_Spider {
         calibration = 1,
         //% blockId="Forward" block="forward"
         forward = 2,
+        //% blockId="Backward" block="backward"
+        backward = 3,
         //% blockId="Go_Left" block="Leftward"
-        Leftward = 3,
+        Leftward = 4,
         //% blockId="GO_Right" block="Rightward"
-        Rightward = 4,
+        Rightward = 5,
         //% blockId="Backward" block="stand_up"
-        stand_up = 5,
+        stand_up = 6,
         //% blockId="Rightward" block="get_down"
-        get_down = 6
+        get_down = 7
 
 
     }
@@ -137,15 +139,7 @@ namespace KSR030_Spider {
                 basic.pause(speed)
                 break;
             case SpiderState.forward:
-                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Arm, 70)
-                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 110)
-                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Thigh, 110)
-                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Thigh, 70)
-                SpiderServo(KSR030_Spider.SpiderServoNum.L_Forearm, 70)
-                SpiderServo(KSR030_Spider.SpiderServoNum.R_Forearm, 110)
-                SpiderServo(KSR030_Spider.SpiderServoNum.L_Lower_Thigh, 110)
-                SpiderServo(KSR030_Spider.SpiderServoNum.R_Lower_Thigh, 70)
-                basic.pause(speed)
+
                 SpiderServo(KSR030_Spider.SpiderServoNum.L_Forearm, 50)
                 SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Arm, 45)
                 basic.pause(speed)
@@ -171,6 +165,36 @@ namespace KSR030_Spider {
                 SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Thigh, 90)
                 basic.pause(speed)
                 SpiderServo(KSR030_Spider.SpiderServoNum.L_Lower_Thigh, 110)
+                basic.pause(speed)
+
+                break;
+            case SpiderState.backward:
+
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Lower_Thigh, 50)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Thigh, 45)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Lower_Thigh, 70)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Thigh, 90)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 135)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Arm, 45)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Forearm, 50)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Arm, 90)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Forearm, 70)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Lower_Thigh, 130)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Thigh, 135)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Lower_Thigh, 110)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Thigh, 90)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 135)
+                SpiderServo(KSR030_Spider.SpiderServoNum.L_Upper_Arm, 45)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Forearm, 130)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 90)
+                basic.pause(speed)
+                SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 110)
                 basic.pause(speed)
 
                 break;

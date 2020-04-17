@@ -9,6 +9,7 @@
 	"KSR030_Spider.SpiderServoNum.R_Upper_Arm|block": "前右大腿",
 	"KSR030_Spider.SpiderServoNum.L_Upper_Arm|block": "前左大腿",
 	"KSR030_Spider.SpiderState.forward|block": "前進",
+	"KSR030_Spider.SpiderState.backward|block": "後退",
 	"KSR030_Spider.SpiderState.Leftward|block": "往左",
 	"KSR030_Spider.SpiderState.Rightward|block": "往右",
 	"KSR030_Spider.SpiderState.stand_up|block": "站立",
