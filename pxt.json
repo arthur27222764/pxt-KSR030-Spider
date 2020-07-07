@@ -4,8 +4,8 @@
     "description": "Extension for KAISE KSRobot KSR030 8 Axis Spider Kit ",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "pxt-KSR030": "github:kaise-ksrobot/pxt-KSR030"
+        "core": "*"
+        
     },
     "files": [
         "main.ts",
