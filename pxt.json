@@ -5,9 +5,6 @@
     "license": "MIT",
     "dependencies": {
         "core": "*"
-        
-
-        
     },
     "files": [
         "main.ts",
@@ -17,5 +14,9 @@
     "testFiles": [
         "tests.ts"
     ],
-    "public": true
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
