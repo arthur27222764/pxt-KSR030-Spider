@@ -231,6 +231,7 @@ namespace KSR030_Spider {
                 SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 120)
                 SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Thigh, 60)
                 basic.pause(speed)
+                break;
             case SpiderState.Leftward:
                 SpiderServo(KSR030_Spider.SpiderServoNum.R_Forearm, 130)
                 SpiderServo(KSR030_Spider.SpiderServoNum.R_Upper_Arm, 135)
