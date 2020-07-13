@@ -8,6 +8,7 @@ namespace KSR030_Spider {
     const SERVOMAX = 510 // this is the 'maximum' pulse length count (out of 4096)
     const IIC_ADDRESS = 0x40
     const LED0_ON_L = 0x06
+    let initialized = false;
 
 
 
@@ -85,6 +86,10 @@ namespace KSR030_Spider {
         //let pulselen = servo_timing*4096/20000
         //normal 0.5ms~2.4ms
         //SG90 0.5ms~2.0ms
+        if (!initialized) {
+            KSR030.Servo(KSR030.ServoNum.S0, 90)
+            initialized = true;
+        }
 
         let pulselen = servo_map(degree, 0, 180, SERVOMIN, SERVOMAX);
         //let pulselen = servo_map(degree, 0, 180, servomin, servomax);
