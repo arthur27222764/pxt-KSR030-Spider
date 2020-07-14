@@ -34,19 +34,19 @@ namespace KSR030_Spider {
     }
 
     export enum SpiderState {
-        //% blockId="Wagging_tail" block="calibration"
+        //% blockId="calibration_id" block="calibration"
         calibration = 1,
-        //% blockId="Forward" block="forward"
+        //% blockId="forward_id" block="forward"
         forward = 2,
-        //% blockId="Backward" block="backward"
+        //% blockId="backward_id" block="backward"
         backward = 3,
-        //% blockId="Go_Left" block="Leftward"
+        //% blockId="Leftward_id" block="leftward"
         Leftward = 4,
-        //% blockId="GO_Right" block="Rightward"
+        //% blockId="Rightward_id" block="rightward"
         Rightward = 5,
-        //% blockId="Backward" block="stand_up"
+        //% blockId="stand_up_id" block="stand_up"
         stand_up = 6,
-        //% blockId="Rightward" block="get_down"
+        //% blockId="get_down_id" block="get_down"
         get_down = 7
 
 

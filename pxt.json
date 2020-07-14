@@ -1,6 +1,6 @@
 {
     "name": "KSR030_Spider",
-    "version": "0.1.0",
+    "version": "0.4.0",
     "description": "Extension for KAISE KSRobot KSR030 8 Axis Spider Kit ",
     "license": "MIT",
     "dependencies": {
